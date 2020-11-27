@@ -327,3 +327,87 @@
   </body>
 </html>
 ```
+## Error-Prevention Tip 19.2
+<div class = "tip">
+  <p>Initialize variables before they're used to avoid subtle
+    </br>errors. For example, multiplying a number by an
+    </br>uninitialized variable results in 0.</p>
+ </div>
+ 
+## PHP keywords
+<table>
+<thead>
+  <tr>
+    <th colspan="5">PHP keywords</th>
+  </tr>
+</thead>
+  
+<tr>
+  <td>abstract</td>
+  <td>and</td>
+  <td>array</td>
+  <td>as</td>
+  <td>break</td>
+</tr>
+
+<tr>
+  <td>case</td>
+  <td>catch</td>
+  <td>class</td>
+  <td>clone</td>
+  <td>const</td>
+</tr>
+
+<tr>
+  <td>continue</td>
+  <td>declare</td>
+  <td>default</td>
+  <td>do</td>
+  <td>else</td>
+</tr>
+
+<tr>
+  <td>endswitch</td>
+  </td>endwhile</td>
+  <td>extends</td>
+  <td>final</td>
+  <td>for</td>
+</tr>
+
+<tr>
+  <td>foreach</td>
+  <td>function</td>
+  <td>global</td>
+  <td>goto</td>
+  <td>if</td>
+</tr>
+
+<tr>
+  <td>implements</td>
+  <td>interface</td>
+  <td>instanceof</td>
+  <td>namespace</td>
+  </td>new</td>
+</tr>
+
+<tr>
+  <td>or</td>
+  <td>private</td>
+  <td>protected</td>
+  <td>public</td>
+  <td>static</td>
+</tr>
+
+<tr>
+  <td>switch</td>
+  ,td>throw</td>
+  <td>try</td>
+  <td>use</td>
+  <td>var</td>
+</tr>
+
+<tr>
+  <td>while</td>
+  <td>xor</td>
+</tr>
+</table>
