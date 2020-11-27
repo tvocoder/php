@@ -584,3 +584,84 @@
   <td>left to right</td>
   </tr>
 </table>
+
+### (Part 4 of 5.)
+
+<div class="figure">
+<table>
+<thead>
+  <tr>
+    <th>Operator</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tr rowspan="13">
+  <td>=
+  </br>+=
+  </br>-=
+  </br>*=
+  </br>/=
+  </br>%=
+  </br>&=
+  </br>|=
+  </br>^=
+  </br>.=
+  </br><<=
+  </br>>>=
+  </br>=></td>
+  <td>assignment
+  </br>addition assignment
+  </br>subtraction assignment
+  </br>multiplication assignment
+  </br>division assignment
+  </br>modulus assignment
+  </br>bitwise AND assignment
+  </br>bitwise OR assignment
+  </br>bitwise exclusive OR assignment
+  </br>concatenation assignment
+  </br>bitwise shift left assignment
+  </br>bitwise shift right assignment
+  </br>assign value to a named key</td>
+</tr>
+
+<tr>
+  <td>and</td>
+  <td>logical AND</td>
+  <td>left to right</td>
+</tr>
+
+<tr>
+  <td>xor</td>
+  <td>exclusive OR</td>
+  <td>left to right</td>
+</tr>
+
+<tr>
+  <td>or</td>
+  <td>logical OR</td>
+  <td>left to right</td>
+</tr>
+</table>
+</div>
+ 
+ ### (Part 5 of 5.)
+ 
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Type</th>
+      <th>Associativit
+    </br>y</th>
+  </tr>
+  </thead>
+  
+  <tr>
+  <td>'</td>
+  <td>list</td>
+  <td>left to right</td>
+  </tr>
+  </table>
+  
+  
