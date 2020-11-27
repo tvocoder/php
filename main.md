@@ -368,7 +368,7 @@
 
 <tr>
   <td>endswitch</td>
-  </td>endwhile</td>
+  <td>endwhile</td>
   <td>extends</td>
   <td>final</td>
   <td>for</td>
@@ -400,7 +400,7 @@
 
 <tr>
   <td>switch</td>
-  ,td>throw</td>
+  <td>throw</td>
   <td>try</td>
   <td>use</td>
   <td>var</td>
