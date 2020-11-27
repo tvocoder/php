@@ -480,3 +480,107 @@
   <td>left to right</td>
 </tr>
 </table>
+
+### (Part 2 of 5.)
+
+<table>
+<thead>
+<tr>
+  <th>Operator</th>
+  <th>Type</th>
+  <th>Associativit
+  </br>y</th>
+</tr>
+</thead>
+
+<tr rowspan="3">
+  <td>+
+    </br>-
+    </br>.</td>
+  <td>addition
+  </br>subtraction
+  </br>concatenation</td>
+  <td>left to right</td>
+</tr>
+
+<tr rowspan="2">
+  <td><<
+    </br>>></td>
+  <td>bitwise shift left
+  </br>bitwise shift right</td>
+  <td>left to right</td>
+</td>
+
+<tr rowspan="4">
+  <td>< 
+</br> >
+    </br> <=
+    </br> >=</td>
+  <td>less than
+  </br>greater than
+  </br> less than or equal 
+  </br>greater or equal</td>
+  <td>none</td>
+</tr>
+
+<tr rowspan="4">
+  <td>==
+    </br>!=
+    </br>===
+    </br>!==</td>
+  <td>equal
+  </br>not equal
+  </br>identical
+  </br>not identical</td>
+  <td>none</td>
+</tr>
+
+<tr>
+  <td>&</td>
+  <td>bitwise AND</td>
+  <td>left to right</td>
+</tr>
+
+<tr>
+  <td>^</td>
+  <td>bitwise XOR</td>
+  <td>left to right</td>
+</tr>
+</table>
+
+### (Part 3 of 5.) PHP operator precedence and associativity
+
+<table>
+  <thead>
+  <tr>
+    <th>Operator</th>
+    <th>Type</th>
+    <th>Associativit
+    </br>y</th>
+  </tr>
+  </thead>
+  
+  <tr>
+  <td>|</td>
+  <td>bitwise OR</td>
+  <td>left to right</td>
+  </tr>
+  
+  <tr>
+  <td>&&</td>
+  <td>logical AND</td>
+  <td>left to right</td>
+  </tr>
+  
+  <tr>
+  <td>||</td>
+  <td>logical OR</td>
+  <td>left to right</td>
+  </tr>
+  
+  <tr>
+  <td>?:</td>
+  <td>ternary conditional</td>
+  <td>left to right</td>
+  </tr>
+</table>
