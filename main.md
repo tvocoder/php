@@ -387,7 +387,7 @@
   <td>interface</td>
   <td>instanceof</td>
   <td>namespace</td>
-  </td>new</td>
+  <td>new</td>
 </tr>
 
 <tr>
