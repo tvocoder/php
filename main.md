@@ -230,5 +230,100 @@
    ?> <!-- end PHP script -->
  </body>
 </html>
+```
+
+<div class="erpretip">
+<p>Function print can be used to display the value of a 
+</br>variable at a particular point during a program's
+</br>execution. This is often helpful in debugging a script.
+</div>
+
+# 19.4
+## Arithmetic Operators
+
+<ul>
+<li>Function define creates a named constant. It takes two
+</br>arguments&#8212;the name and value of the constant. An
+</br>optional third argument accepts a boolean value that
+</br>specifies whether the constant is case insensitive&#8212;</li>
+<li>Uninitialized variables have undefined values that
+</br>evaluate differently, depending on the context. In a
+</br>numeric context, it evaluates to 0. In contrast, when an
+</br>undefined value is interpreted in a string context (e.g.,
+</br>$nothing), it evaluates to the string "undef".</li>
+<li>Keywords may not be used as function, method, class
+</br>or namespace names.</li>
+</ul>
+
+## Common Programming Error 19.3
+
+<div class = "slide" id="21">
+  <p>Assigning a value to a constant after it's declared is a
+    </br>syntax error.</p>
+  </div>
    
+# Fig. 19.4
+## Using arithmetic operators.
+
+``` php
+<!DOCTYPE html>
+
+<!-- Fig. 19.4: operators.php -->
+<!-- Using arithmetic operators. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <style type = "text\css">
+         p   { margin: 0; }
+      </style>
+  </head>
+  <body>
+     <?php
+        $a = 5;
+        print("<p>The value of variable a is $a</p>");
+        
+        // define constant VALUE
+        define("VALUE", 5);
+        
+        // add constant VALUE to variable $a
+        $a = $a + VALUE;
+        print("<p>Variable a after adding constant VALUE is $a</p>");
+        
+        // multiply variable $a by 2
+        $a *= 2;
+        print("<p>Multiplying variable a by 2 yields $a</p>");
+        
+        // test if variable $a is less than 50
+        if ( $a < 50 )
+           print( "<p>Variable a is less than 50</p>" );
+        
+        // add 40 to variable $a
+        $a += 40;
+        print( "<p>Variable a after adding 40 is $a</p>" );
+        
+        // test if variable $a is 50 or less
+        if ( $a < 51 )
+           print("<p>Variable a is still 50 or less</p>" );
+        elseif ( $a < 101 ) // $a >= 51 and <= 100
+           print( "<p>Variable a is now between 50 and 100,
+              inclusive</p>" );
+        else // $a > 100
+           print( "<p>Variable a is no greater than 100</p>" );
+           
+        // print an uninitialized variable
+        print( "<p>Using a variable before initializing:
+           $nothing</p>" ); // nothing evaluates to ""
+           
+        // add constant VALUE to an uninitialized variable
+        $test = $num + VALUE; // num evaluates to 0
+        print( "<p>An uninitialized variable plus constant
+           VALUE yields $test</p>");
+           
+        // add a string to an integer
+        $str = "3 dollars";
+        $a += $str;
+        print( "<p>Adding a string to variable a yields $a</p>" );
+     ?>
+  </body>
+</html>
 ```
