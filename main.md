@@ -623,6 +623,8 @@
   </br>bitwise shift left assignment
   </br>bitwise shift right assignment
   </br>assign value to a named key</td>
+  
+  <td>right to left</td>
 </tr>
 
 <tr>
