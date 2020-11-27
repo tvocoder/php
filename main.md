@@ -431,4 +431,52 @@
     </br>copy an object</td>
   <td>none</td>
 </tr>
+
+<tr>
+  <td>[]</td>
+  <td>subscript</td>
+  <td>left to right</td>
+</tr>
+
+<tr rowspan="2">
+  <td>++
+    </br>--</td>
+  <td>increment
+    </br>decrement</td>
+  <td>none</td>
+</tr>
+
+<tr rowspan="4">
+  <td>~
+    </br>-
+    </br>@
+    </br><i>(type)</i></td>
+  <td>bitwise not
+    </br>unary negative
+    </br>error control
+    </br>cast</td>
+  <td>right to left</td>
+</tr>
+
+<tr>
+  <td>instance of</td>
+  <td />
+  <td>none</td>
+</tr>
+
+<tr>
+  <td>!</td>
+  <td>not</td>
+  <td>right to left</td>
+</tr>
+
+<tr rowspan="3">
+  <td>*
+    </br>/
+    </br>%</td>
+  <td>multiplication
+    </br>division
+    </br>modulus</td>
+  <td>left to right</td>
+</tr>
 </table>
