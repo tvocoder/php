@@ -411,3 +411,24 @@
   <td>xor</td>
 </tr>
 </table>
+
+# Fig. 19.6
+## PHP operator precedence and associativity.
+
+<table>
+<thead>
+<tr>
+   <th>Operator</th>
+   <th>Type</th>
+   <th>Associativit</br>y</th>
+</tr>
+</thead>
+
+<tr rowspan="2">
+  <td>new
+    </br>clone</td>
+  <td>constructor
+    </br>copy an object</td>
+  <td>none</td>
+</tr>
+</table>
