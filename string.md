@@ -77,7 +77,7 @@
     </br>context.</li>
   <li><i>Anything enclosed in single quotes in a print statement is
   </br>not interpolated, unless the signle quotes are nested in a
-  </br>double-quoted string literal.</li>
+  </br>double-quoted string literal.</i></li>
   <li>Function preg_match takes two arguments&#8212;a regular&#8211;
   </br>expression pattern to search for and the string to search.</li>
   <li>Function preg_match performs <i>case-insensitive pattern matches.</i></li>
