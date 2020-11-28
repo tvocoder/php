@@ -36,3 +36,66 @@
     </br>names, similar to the values stored in array $_POST
     </br>when an HTML5 form is posted</li>
 </ul>
+
+# Fig. 19.17
+## Gathering data to be written as a cookie.
+
+``` html
+<!DOCTYPE html>
+
+<!-- cookies.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Writing a cookie to the client computer</title>
+    <style type="text/css">
+      label { width: 7em; float: left; }
+    </style>
+  </head>
+  
+  <body>
+    <h2>Click Write Cookie to save your cookie data.</h2>
+    
+    <form method="post" action="cookies.php">
+      <div><label>Name:</label>
+        <input type="text" name="name"></div>
+      
+      <div><label>Height:</label>
+        <input type="text" name="height"></div>
+      
+      <div><label>Favorite Color:</label>
+        <input type="text" name="Color"></div>
+      
+      <p><input type="submit" value="Write Cookie"></p>
+    </form>
+  </body>
+</html> 
+```
+
+# Fig. 19.18
+## Writing a cookie to the client.
+
+``` php
+<!-- cookies.php -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Writing a cookie to the client.</title>
+</head>
+
+<body>
+   <p>The cookie has been set with the following data:</p>
+   
+   <!-- print each form field's value -->
+   <p>Name: <?php print( $Name ) ?></p>
+   <p>Height: <?php print( $Height ) ?></p>
+   <p>Favorite Color:
+      <span style="color: <?php print( "$Color") ?>;">
+      <?php print( "$Color" ) ?></span></p>
+   <p>Click <a href="readCookies.php">here</a>
+      to read the saved cookie.</p>
+</body>
+</html>
+```
