@@ -18,3 +18,22 @@
   <li>The function returns true on success or false on
     </br>failure.</li>
 </ul>
+
+# 19.9
+## (Cont'd.)
+
+<ul>
+  <li>To query the database, we call function mysql_query,
+    </br>specifying the query string and the database to query.</li>
+  <li>This returns a resource containing the result of the query, or
+    </br>false if the query fails.</li>
+  <li>It can also execute SQL statements such as INSERT or DELETE
+    </br>that do not return results.</li>
+  <li>The mysql_error function returns any error strings from the
+    </br>database.</li>
+  <li>mysql_close closes the connection to the database specified
+    </br>in its argument</li>
+  <li>The mysql_fetch_row function returns an array containing
+    </br>the values for each column in the current row of the query
+    </br>result ($result).</li>
+</ul>
