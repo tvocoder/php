@@ -430,7 +430,7 @@
       <p>Which operating system do you use?</p>
       
       <!-- create five radio buttons -->
-      <p><input type="radio" name="os" value="windows"
+      <p><input type="radio" name="os" value="Windows"
                 checked>Windows
         <input type="radio" name="os" value="Mac OS X">Mac OS X
         <input type="radio" name="os" value="Linux">Linux
