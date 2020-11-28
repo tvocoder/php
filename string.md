@@ -299,5 +299,18 @@
   <li>the string to search. The modified string is
     </br>returned.</li>
   </ul>
-  <li>
+  </li>
+</ul>
+
+# 19.8
+## Form Processing and Business Logic
+
+<ul>
+  <li>Superglobal arrays are associative arrays
+    </br>predefined by PHP that hold variables acquired
+    </br>from user input, the environment or the web server
+    </br>and are accessible in any variable scope.</li>
+  <li>The <b>arrays</b> $_GET and $_POST retrieve information
+    </br>sent to the server by HTTP get and post requests,
+    </br>respectively.</li>
 </ul>
