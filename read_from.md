@@ -136,7 +136,7 @@
          ?> <!-- end PHP script -->
    </table>
    
-   <p>You search yielded
+   <p>Your search yielded
       <?php print( mysql_num_rows( $result ) ) ?> results.</p>
    <p>Please email comments to <a href="mailto:deitel@deitel.com">
          Deitel and Associates, Inc.</a></p>
