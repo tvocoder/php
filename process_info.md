@@ -43,6 +43,7 @@
    <p>Name: <?php print( $_POST["fname"] );
                   print( $_POST["lname"] ); ?></p>
    
+   // $_POST ? email, phone
    <p>Email: <?php print( "$email" ); ?></p>
    <p>Phone: <?php print( "$phone" ); ?></p>
    <p>OS <?php print ( $_POST["os"] ); ?></p>
