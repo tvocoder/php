@@ -140,3 +140,164 @@
   </body>
 </html>
 ```
+
+# 19.7.2
+## Representing Patterns
+
+<ul>
+  <li>Regular expressions can include metacharacters
+    </br>such as ^, $, and . that specify patters.</li>
+  <li>For example, the caret (^) metacharacter matches
+    </br>the beginning of a string, while the dollar sign ($)
+    </br>matches the end of a string.</li>
+  <li>The period (.) metacharacter matches any single
+    </br>character.</li>
+  <li>Bracket expressions are lists of characters enclosed
+    </br>in square brackets ([]) that match any single
+    </br>character from the list</li>
+  <li>Ranges can be specified by supplying the
+    </br>beginning and the end of the range separated by a
+    </br>dash (-).</li>
+</ul>
+
+## (Cont'd.)
+
+<ul>
+  <li>The \b before and after the parentheses indicates
+    </br>the beginning and end of a word, respectively&#8212;in
+    </br>other words, we're attempting to match whole
+    </br>words.</li>
+  <li>Quantifiers are used in regular expressions to
+    </br>denote how often a particular character or set of
+    </br>characters can appear in a match.</li>
+</ul>
+
+# Fig. 19.10
+## Some regular expression quantifiers.
+
+<table>
+  <thead>
+    <tr>
+      <th>Quantifier</th>
+      <th>Matches</th>
+    </tr>
+  </thead>
+  
+  <tr>
+  <td>{<i>n</i>}</td>
+  <td>Exactly <i>n</i> times</td>
+  </tr>
+  
+  <tr>
+  <td>{<i>m</i>, <i>n</i>}</td>
+  <td>Between <i>m</i> and <i>n</i> times, inclusive</td>
+  </tr>
+  
+  <tr>
+  <td>{<i>n</i>,}</td>
+  <td><i>n</i> or more times</td>
+  </tr>
+  
+  <tr>
+  <td>+</td>
+  <td>One or more times (same as {1,})</td>
+  </tr>
+  
+  <tr>
+  <td>*</td>
+  <td>Zero or more times (same as {0,})</td>
+  </tr>
+  
+  <tr>
+  <td>?</td>
+  <td>Zero or one time (same as {0, 1})</td>
+  </tr>
+  </table>
+
+# 19.7.3
+## Finding Matches
+
+<ul>
+  <li>The optional third argument to function preg
+    </br>_match is an array that stores matches to each
+    </br>parenthetical statement of the regular expression.</li>
+  <li>The first element stores the string matched for the
+    </br>entire pattern, and the remaining elements are
+    </br>indexed from left to right.</li>
+  <li>To find multiple instances of a given patter, we
+    </br>must make multiple calls to preg_match, and
+    </br>remove matched instances before calling the
+    </br>function again by using a function such as
+    </br>preg_replace.</li>
+</ul>
+
+# 19.7.4
+## Character Classes
+
+<ul>
+  <li>Character classes are enclosed by the delimiters [:
+    </br> and :].</li>
+  <li>When this expression is placed in another set of
+    </br>brackets, it is a regular expression matching all of
+    </br>the characters in the class.</li>
+  <li>A bracketed expression containing two or more
+    </br>adjacent character classes in the class delimiters
+    </br>represents those character sets combined.</li>
+</ul>
+
+# Fig. 19.11
+## Some regular expression character classes.
+
+<table>
+  <thead>
+    <tr>
+      <th>Character class</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  
+  <tr>
+  <td>alnum</td>
+  <td>Alphanumeric characters(i.e., letters[a-zA-Z] or digits[0-9])</td>
+  </tr>
+  
+  <tr>
+  <td>alpha</td>
+  <td>Word characters(i.e., letters[a-zA-Z])</td>
+  </tr>
+  
+  <tr>
+  <td>digit</td>
+  <td>Digits</td>
+  </tr>
+  
+  <tr>
+  <td>space</td>
+  <td>White space</td>
+  </tr>
+  
+  <tr>
+  <td>lower</td>
+  <td>Lowercase letters</td>
+  </tr>
+  
+  <tr>
+  <td>upper</td>
+  <td>Uppercase letters</td>
+  </tr>
+</table>
+
+# 19.7.5
+## Finding Multiple Instances of a Pattern
+
+<ul>
+  <li>Function preg_replace takes three
+    </br>arguments&#8212;
+    <ul>
+  <li>the pattern to match</li>
+  <li>a string to replace the matched string and</li>
+  <li>the string to search. The modified string is
+    </br>returned.</li>
+  </ul>
+  <li>
+</ul>
