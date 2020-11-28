@@ -117,7 +117,7 @@
       "November"  => "eleventh", "December" => "twelfth" );
       
    // print each element's name and value
-   foreach ( $fourth as $element => value )
+   foreach ( $fourth as $element => $value )
       print("<p>$element is the $value month</p>" );
    
    ?> <!-- end PHP script -->
