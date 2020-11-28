@@ -5,7 +5,7 @@
 <ul>
   <li>A cookie is a piece of information that's stored by a server in
     </br>a text file on a client's computer to maintain information
-    </br>about the client during and between browing sessions.</li>
+    </br>about the client during and between browsing sessions.</li>
   <li><i>A server can access only the cookies that it has placed on the
   </br>client.</i></li>
   <li>Function setcookie takes the name of the cookie to be set
@@ -20,3 +20,19 @@
     </br>cookie.</li>
 </ul>
 
+# 19.10
+## (Cont'd.)
+
+<ul>
+  <li>If only the name argument is passed to function
+    </br>setcookie, the cookie is deleted from the client's
+    </br>computer.</li>
+  <li>Cookies defined in function setcookie are sent to
+    </br>the client at the same time as the information in
+    </br>the HTTP header; therefore, setcookie needs to
+    </br>be called <i>before</i> any other output</li>
+  <li>PHP creates the superglobal array $_COOKIE, which
+    </br>contains all the cookie values indexed by their
+    </br>names, similar to the values stored in array $_POST
+    </br>when an HTML5 form is posted</li>
+</ul>
