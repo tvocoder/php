@@ -442,3 +442,10 @@
   </body>
 </html>
 ```
+
+<div class="practice">
+  <p>Use meaningful HTML5 object names for input fields.
+    </br>This makes PHP scripts that retrieve form data easier to
+    </br>understand.</p>
+</div>
+
