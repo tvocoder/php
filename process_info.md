@@ -54,3 +54,15 @@
 </html>
    
 ```
+
+# 19.1
+## Software Engineering Observation
+
+<div>
+   <p>Use business logic to ensure that invalid information is
+      </br>not stored in databases. Validate important or sensitive
+      </br>form data on the server, since JavaScript may be disabled
+      </br>by the client. Some data, such as passwords, must always 
+      </br>be validated on the server side.</p>
+</div>
+
