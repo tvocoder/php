@@ -314,3 +314,131 @@
     </br>sent to the server by HTTP get and post requests,
     </br>respectively.</li>
 </ul>
+
+# Fig. 19.12
+## Some useful superglobal arrays.
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable
+    </br>name</th>
+  <th>Description</th>
+  </tr>
+  
+  <tr>
+  <td>$_SERVER</td>
+  <td>Data about the currently running server.</td>
+  </tr>
+  
+  <tr>
+  <td>$_ENV</td>
+  <td>Data about the client's environment.</td>
+  </tr>
+  
+  <tr>
+  <td>$_GET</td>
+  <td>Data sent to the server by a get request.</td>
+  </tr>
+  
+  <tr>
+  <td>$_POST</td>
+  <td>Data sent to the server by a post request.</td>
+  </tr>
+  
+  <tr>
+  <td>$_COOKIE</td>
+  <td>Data contained in cookies on the client's computer.</td>
+  </tr>
+  
+  <tr>
+  <td>$GLOBALS</td>
+  <td>Array containing all global variables.</td>
+  </tr>
+</table>
+
+# 19.8.2
+## Using PHP to Process HTML5 Forms
+
+<ul>
+  <li>Using method="post" appends form data to the
+    </br>browser request that contains the protocol and the
+    </br>requested resource's URL. Scripts located on the 
+    </br>web server's machine can access the form data
+    </br>sent as part of the request.</li>
+</ul>
+
+# 19.4
+## Form Processing and Business Logic (Cont.)
+
+<ul>
+  <li>We escape the normal meaning of a character in a
+    </br>string by preceding it with the backslash character
+    </br>(\).</li>
+  <li>Function die <i>terminates</i> script execution. The
+    </br>function's optional argument is a string, which is
+    </br>printed as the scripts exits</li>
+</ul>
+
+# Fig. 19.13
+## HTML5 form for gathering user input.
+
+``` html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Form</title>
+    <style type="text/css">
+      label { width: 5em; float: left; }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill in all fields and click Register.</p>
+    
+    <!-- post form data to form.php -->
+    <form method="post" action="form.php">
+      <h2>User Information</h2>
+      
+      <!-- create four text boxes for user input -->
+      <div>
+        
+      <div><label>First name:</label>
+        <input type="text" name="fname"></div>
+      <div><label>Last name:</label>
+        <input type="text" name="lname"></div>
+      <div><label>Email:</label>
+        <input type="text" name="email"></div>
+      <div><label>Phone:</label>
+        <input type="text" name="phone"
+               placeholder = "(281) 713-1036"></div>
+      </div>
+      
+      <h2>Publications</h2>
+      <p>Which book would you like information about?</p>
+      
+      <!-- create drop-down list containing book names -->
+      <select name = "book">
+        <option>Internet and WWW How to Program</option>
+        <option>C++ How to Program</option>
+        <option>Java How to Program</option>
+        <option>Visual Basic How to Program</option>
+      </select>
+      
+      <h2>Operating Systems</h2>
+      <p>Which operating system do you use?</p>
+      
+      <!-- create five radio buttons -->
+      <p><input type="radio" name="os" value="windows"
+                checked>Windows
+        <input type="radio" name="os" value="Mac OS X">Mac OS X
+        <input type="radio" name="os" value="Linux">Linux
+        <input type="radio" name="os" value="Other">Other</p>
+      
+      <!-- create a submit button -->
+      <p><input type="submit" name="submit" value="Register"></p>
+    </form>
+  </body>
+</html>
+```
