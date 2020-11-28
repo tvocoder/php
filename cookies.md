@@ -76,8 +76,6 @@
 ## Writing a cookie to the client.
 
 ``` php
-<!-- cookies.php -->
-
 <!DOCTYPE html>
 <html>
 <head>
